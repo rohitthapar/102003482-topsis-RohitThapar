@@ -1,28 +1,35 @@
+import pathlib
+from setuptools import setup
 
-from distutils.core import setup
+# The directory containing this file
+HERE = pathlib.Path(__file__).parent
+
+# The text of the README file
+README = (HERE / "README.md").read_text()
+
+# This call to setup() does all the work
 setup(
-  name = 'topsis-rohitThapar-102003482',         # How you named your package folder (MyLib)
-  packages = ['topsis-rohitThapar-102003482'],   # Chose the same as "name"
-  version = '0.0.1',      # Start with a small number and increase it with every change you make
-  license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
-  description = 'TYPE YOUR DESCRIPTION HERE',   # Give a short description about your library
-  author = 'Rohit Thapar',                   # Type in your name
-  author_email = 'thaprt206@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/rohitthapar/topsis-rohitThapar-102003482',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
-  keywords = ['SOME', 'MEANINGFULL', 'KEYWORDS'],   # Keywords that define your package best
-  install_requires=[            # I get to this in a second
-          'numpy',
-          'tabulate',
-      ],
-  classifiers=[
-    'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
-    'Intended Audience :: Developers',      # Define that your audience are developers
-    'Topic :: Software Development :: Build Tools',
-    'License :: OSI Approved :: MIT License',   # Again, pick a license
-    'Programming Language :: Python :: 3',      #Specify which pyhton versions that you want to support
-    'Programming Language :: Python :: 3.4',
-    'Programming Language :: Python :: 3.5',
-    'Programming Language :: Python :: 3.6',
-  ],
+    name="Ttopsis-rohitThapar-102003482",
+    version="0.0.2",
+    description="This is a Python library for handling problems related to Multiple Criteria Decision Making(MCDM)",
+    long_description=README,
+    long_description_content_type="text/markdown",
+    url="https://github.com/rohitthapar/topsis-rohitThapar-102003482",
+    author="Rohit Thapar",
+    author_email="thaprt206@gmail.com",
+    license="MIT",
+    classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+    ],
+    packages=["topsis-rohitThapar-102003482"],
+    include_package_data=True,
+    install_requires="pandas",
+    entry_points={
+        "console_scripts": [
+            "topsis=topsis-rohitThapar-102003482.topsis:main",
+        ]
+    },
 )
