@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 
 # This call to setup() does all the work
 setup(
-    name="Topsis-RohitThapar-102003482",
+    name="topsis-package",
     version="0.0.1",
     description="This is a Python library for handling problems related to Multiple Criteria Decision Making(MCDM)",
     long_description=README,
