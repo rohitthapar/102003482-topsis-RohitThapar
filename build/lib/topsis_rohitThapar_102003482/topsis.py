@@ -146,4 +146,5 @@ def checkRequirements() :
         return
 
 # MAIN FUNCTION
-checkRequirements()
+if __name__ == "__main__":
+    checkRequirements()
