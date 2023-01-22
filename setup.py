@@ -9,12 +9,12 @@ README = (HERE / "README.md").read_text()
 
 # This call to setup() does all the work
 setup(
-    name="topsis-rohitThapar-102003482",
+    name="topsis_rohitThapar_102003482",
     version="0.0.3",
     description="This is a Python library for handling problems related to Multiple Criteria Decision Making(MCDM)",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/rohitthapar/topsis-rohitThapar-102003482",
+    url="https://github.com/rohitthapar/topsis_rohitThapar_102003482",
     author="Rohit Thapar",
     author_email="thaprt206@gmail.com",
     license="MIT",
@@ -24,12 +24,12 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
-    packages=["topsis-rohitThapar-102003482"],
+    packages=["topsis_rohitThapar_102003482"],
     include_package_data=True,
     install_requires="pandas",
     entry_points={
         "console_scripts": [
-            "topsis=topsis-rohitThapar-102003482.topsis:main",
+            "topsis=topsis_rohitThapar_102003482.topsis:main",
         ]
     },
 )
