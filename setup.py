@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="topsis_rohitThapar_102003482",
-    version="0.0.4",
+    version="1.0.0",
     description="This is a Python library for handling problems related to Multiple Criteria Decision Making(MCDM)",
     long_description=README,
     long_description_content_type="text/markdown",
