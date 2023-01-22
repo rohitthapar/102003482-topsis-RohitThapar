@@ -1,9 +1,6 @@
 import streamlit as st
 # from topsis_rohitThapar_102003482 import topsis
-
-
 # base="light"
-
 st.title("Topsis method for multiple-criteria decision making (MCDM)")
 
 Inpcsv = st.file_uploader("Please Upload Input CSV")
@@ -193,14 +190,11 @@ if submit:
         result = mailjet.send.create(data=data)
         print(result.status_code)
         print(result.json())
-
-
     import base64
-
     data = open(filenameout, "r").read()
     data = data.encode("utf-8")
     encoded = base64.b64encode(data)
     encoded = encoded.decode("utf-8")
-    send_with_mailjet("dhairya.superamazing@outlook.com", Email_id, "result.csv", encoded)
+    send_with_mailjet("thaprt206@gmail.com", Email_id, "result.csv", encoded)
     st.write("Email sent successfully , Please check your Spam folder also for mail")
     os.remove(filenameout)
